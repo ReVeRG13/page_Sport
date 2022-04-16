@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --color-light:#fff;
+    --color-black:#000;
+    --color-sport:rgb(240, 134, 13);
+
+    --containers-width-lg: 95%;
+    --containers-width-md: 90%;
+    --containers-width-sm: 94%;
+
+    --transition: all 400ms ease;
+
+}
+
+
+.containers{
+    width: var(--containers-width-lg);
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+
+a{
+    color: var(--color-light);
+}
+
+
+    /* NAVBAR */
+nav{
+    background: transparent;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top:0;
+    z-index: 11;
+}
+/* Change navbar styles on scroll using javaScript */
+.window-scroll{
+    background: var(--color-black);
+    box-shadow:  0 1rem 2rem rgba(0,0,0,0.2);
+}
+.nav__containers{
+    background: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__containers h4{
+    font-size: 1.5rem;
+}
+.nav__containers h4:hover{
+    color:var(--color-sport);
+}
+.nav__containers .heart{
+    position: absolute;
+    top: 30%;
+    right: 86%;
+    display: flex;
+    font-size: 30px;
+}
+.nav__menu{
+    display: flex;
+    gap:4rem;              /* between text nav */
+    background: transparent;
+}
+.nav__menu a{
+    font-size: 1rem;
+    transition: var(--transition);
+}
+.nav__menu a:hover{
+    background: #312f2f;
+    padding: 7px;
+    border-radius: 10px;
+}
+.nav__menu ul{
+    list-style: none;
+    transform: translate(-70%,0%);
+}
+.nav__menu ul li {      /* all wrapper*/
+    margin: 0 -1.8rem 0rem;     
+    width: 160px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-indent: 10px;
+    display: inline-box;
+    background: transparent; 
+    transition: var(--transition);
+    position: relative;
+    color: #fff;
+}
+.nav__menu ul li:hover{
+    border-left: 6px solid var(--color-sport);
+}
+.nav__menu ul ul{              /* hide bar*/
+    display: none;
+}
+.nav__menu ul li:hover > ul{     /* Show bar*/
+    display: block;
+}
+.nav__menu ul ul li{            /* second bar */
+    background: var(--color-black);
+    width: 220px;
+    text-align: start;
+    text-indent: 10px;
+    color:var(--color-light);
+    transform: translate(55%,1%);
+}
+.sign{
+    transform: translate(5%,2%);
+    padding: 5px 26px;
+    font-size: 15px;
+    background: var(--color-sport);
+    text-decoration: none;
+    color: var(--color-light);
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    margin-left: 1%;
+}
+.sign:hover{
+    background-color: var(--color-black);
+}
+.globe{
+    position: absolute;
+    top: 38.1%;
+    right: 22.5%;
+    display: flex;
+    font-size: 20px;
+}
+.search input{
+    position: absolute;
+    width: 250px;
+    height: 2rem;
+    transform: translate(48%,-50%);
+    border: 1px solid;
+    background:transparent;
+    border-radius: 25px;
+    font-size: 15px;
+    color: var(--color-light);
+    padding-left: 15px;
+    outline: none;
+}
+::placeholder {
+    color: var(--color-light);
+}
+.search .search-btn{
+    position: absolute;
+    top: 38%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--color-light);
+}
+.search input:hover{
+    box-shadow:  0px 4px 4px var(--color-sport);
+    transition: all 800ms ease;
+}
+
+/* Footer */
+footer{
+    margin-top: -1.9%;
+    background: transparent;
+    padding-top:3rem;
+    font-size: 0.9rem;
+    padding-bottom: 3rem;
+}
+.footer__containers{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10rem;
+    background: transparent;
+    padding-left: 5rem;
+}
+.footer__containers > div h4{
+    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
+}
+.footer__1 p{
+   margin: 0 0 2rem; 
+}
+.footer ul li{
+    margin-bottom: 1.4rem;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer__socials{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.footer__socials .fa-brands{
+    background: var(--color-sport);
+    padding: 0.4rem;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+.footer__socials .fa-brands:hover{
+    opacity: 0.8;
+}
+
+footer{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    color: #fff;
+}

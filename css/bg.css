@@ -1,0 +1,30 @@
+.FB{
+    
+    width: 100%;
+    background-image: url(/pic/FB.png);
+}
+
+.BMT{
+    width: 100%;
+    background-image: url(/pic/BMT.png);
+}
+
+.I{
+    
+    width: 100%;
+    background: rgb(52, 52, 52) 
+    
+}
+
+.II{
+    
+    width: 100%;
+    background: rgba(168, 168, 168, 0.477)
+}
+
+.III{
+    
+    width: 100%;
+    background: rgb(52, 52, 52) 
+}
+
